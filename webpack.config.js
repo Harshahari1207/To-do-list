@@ -1,10 +1,18 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  mode: 'development',
+  entry: {
+    index: './src/index.js',
+    inboxElements: './src/inboxElements.js',
+    fooElements: './src/checkUiPage.js',
+    todayElements: './src/todayElements.js',
+    weekElements: './src/weekElements.js', 
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
   module: {
     rules: [
