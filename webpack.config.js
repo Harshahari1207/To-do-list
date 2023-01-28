@@ -7,12 +7,13 @@ module.exports = {
     inboxElements: './src/inboxElements.js',
     fooElements: './src/checkUiPage.js',
     todayElements: './src/todayElements.js',
-    weekElements: './src/weekElements.js', 
+    weekElements: './src/weekElements.js',
+    project: './src/project.js', 
   },
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
+    // clean: true,
   },
   module: {
     rules: [

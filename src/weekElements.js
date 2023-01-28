@@ -1,6 +1,6 @@
 export default function weekElementsView(){
     const mainBar = document.querySelector('.mainBar');
-    
+
     mainBar.textContent = '';
     const weekView = document.createElement('div');
     weekView.classList.add('weekElementsView');

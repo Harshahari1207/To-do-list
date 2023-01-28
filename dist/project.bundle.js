@@ -10,13 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/weekElements.js":
-/*!*****************************!*\
-  !*** ./src/weekElements.js ***!
-  \*****************************/
+/***/ "./src/project.js":
+/*!************************!*\
+  !*** ./src/project.js ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ weekElementsView)\n/* harmony export */ });\nfunction weekElementsView(){\r\n    const mainBar = document.querySelector('.mainBar');\r\n\r\n    mainBar.textContent = '';\r\n    const weekView = document.createElement('div');\r\n    weekView.classList.add('weekElementsView');\r\n    mainBar.appendChild(weekView);\r\n    const weekH2 = document.createElement('h2');\r\n    weekH2.textContent = \"This Week\";\r\n    weekView.appendChild(weekH2);\r\n    console.log(mainBar);\r\n}\n\n//# sourceURL=webpack://to-do-list/./src/weekElements.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ project)\n/* harmony export */ });\nfunction project(){\r\n    const addProj = document.querySelector('.addProject');\r\n    const projectBtn = document.querySelector('.projectBtn');\r\n    \r\n    projectBtn.style.display = \"none\";\r\n    const inputForm = document.createElement('form');\r\n    inputForm.classList.add('inputForm');\r\n    addProj.appendChild(inputForm);\r\n    const input = document.createElement('input');\r\n    input.setAttribute('type', \"text\");\r\n    input.setAttribute('id', \"input-form\");\r\n    inputForm.appendChild(input);\r\n    const formDiv = document.createElement('div');\r\n    formDiv.classList.add(\"formDiv\");\r\n    inputForm.appendChild(formDiv);\r\n    const submit = document.createElement('button');\r\n    submit.classList.add('submit');\r\n    submit.textContent = \"submit\";\r\n    formDiv.appendChild(submit);\r\n    const reset = document.createElement('button');\r\n    reset.classList.add('reset');\r\n    reset.textContent = \"Reset\";\r\n    formDiv.appendChild(reset);\r\n    console.log(\"from project\");\r\n\r\n    \r\n}\n\n//# sourceURL=webpack://to-do-list/./src/project.js?");
 
 /***/ })
 
@@ -60,7 +60,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/weekElements.js"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./src/project.js"](0, __webpack_exports__, __webpack_require__);
 /******/ 	
 /******/ })()
 ;
