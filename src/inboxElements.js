@@ -1,6 +1,7 @@
 
 export default function inboxElementsView(){
     const mainContent = document.querySelector('.mainBar');
+    const taskForm = document.querySelector('.taskForm');
 
     mainContent.textContent = '';
     const inboxView = document.createElement('div');
@@ -10,10 +11,17 @@ export default function inboxElementsView(){
     inboxH2.textContent = "Inbox";
     inboxView.appendChild(inboxH2);
     const inboxBtn = document.createElement('button');
+    inboxBtn.classList.add('btnInbox');
     inboxBtn.textContent = "➕ Add Task";
     inboxView.appendChild(inboxBtn);
-
     
-    console.log("Hello hi");
+    inboxBtn.addEventListener('click', taskFormOpen);
+    function taskFormOpen(){
+        console.log('Taskform');
+        taskForm.style.display = 'flex';
+    
+}
+    
+    // console.log("Hello hi");
 
 }

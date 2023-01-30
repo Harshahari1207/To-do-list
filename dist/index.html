@@ -18,8 +18,14 @@
                 <input type="date" id="taskDate" name="taskName">
             </div>
             <div class="taskNote">
-                <label for="">Note</label>
-                <input type="text" columns="6" rows="5" id="taskName" name="taskNote">
+                <label for="taskNote">Note</label>
+                
+                <textarea type="text" maxlength="30" cols="6" rows="5" id="taskNote" ></textarea>
+            </div>
+            <div class="btns">
+                <input type="submit" class="submitForm" value="submit">
+                <input type="submit" class="closeForm" value="close">
+                <input type="reset" class="resetForm">
             </div>
         </form>
     </div>

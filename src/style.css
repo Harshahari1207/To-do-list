@@ -19,23 +19,59 @@ button{
     transition: 0.4s;
 }
 .taskForm{
+    background-color: rgba(234, 114, 114, 0.2);
+    backdrop-filter: blur(5px);
     display: none;
     flex-direction: column;
     width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 .form{
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: var(--gap);
+    gap: calc(var(--gap)*3);
     background-color: var(--secondary-color);
-
+    padding: calc(var(--pd)*3);
+    border-radius: var(--br);
+}
+.form input{
+    padding: calc(var(--pd)*.5);
+    border-radius: var(--br);
 }
 .taskName, .taskDate, .taskNote{
     gap: var(--gap);
+    display: flex;
+    flex-direction: column;
+}
+#taskNote{
+    border-radius: var(--br);
+} 
+.form .btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.form .btns input{
+    width: 7rem;
+    padding: var(--pd);
+    border: 0;
+    transition: .4s;
+    border-radius: var(--br);
+    background-color: var(--light-brown);
+    cursor: pointer;
+    box-shadow: var(--bs);
+}
+.form .btns input:hover{
+    background-color: var(--foo-color);
+
+}
+.form .btns input:active{
+    background-color: var(--foo-color);
 }
 /* Main Div */
 .main{
