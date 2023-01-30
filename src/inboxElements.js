@@ -13,6 +13,7 @@ export default function inboxElementsView(){
     inboxBtn.textContent = "➕ Add Task";
     inboxView.appendChild(inboxBtn);
 
+    
     console.log("Hello hi");
 
 }
