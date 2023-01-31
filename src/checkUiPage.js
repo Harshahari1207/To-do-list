@@ -8,7 +8,7 @@ export default function checkUi(){
     switch(this.textContent){
         case "Inbox":
             
-                mainBar.textContent = '';
+                
                 inboxElementsView();
             
         break;

@@ -199,6 +199,7 @@ button{
     flex-direction: column;
     width: 100%;
     gap: calc(var(--gap)*2);
+    flex-wrap: wrap;
 }
 .card{
     width: 100%;
@@ -219,7 +220,10 @@ button{
     width: 15rem;
     gap: var(--gap);
 }
-
+.titleDiv, .dateDiv, .noteDiv{
+    display: flex;
+    align-items: center;
+}
 /* .card button{
     width: 10%;
 } */

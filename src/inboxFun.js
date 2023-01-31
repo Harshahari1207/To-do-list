@@ -1,7 +1,7 @@
 import displayToPage from "./display";
 
 const taskForm = document.querySelector('.taskForm');
-
+const form = document.querySelector('.form');
 
 
 
@@ -22,13 +22,13 @@ function List(title, date, note){
 // addListToTodolist("Hari", '31/1/2023', "alishdoiaoihdo nona");
 function closeForm(){
     taskForm.style.display = 'none';
-    // event.preventDefault();
+    event.preventDefault();
 }
-// function resetForm(){
-    
-//     event.preventDefault();
+function resetForm(){
+    form.reset();
+    event.preventDefault();
 
-// }
+}
 export default function addList(){
     console.log("Hello");
     const title = document.getElementById('taskName').value;
@@ -37,7 +37,7 @@ export default function addList(){
     // addListToTodolist(title.value, date.value, note.value);
     event.preventDefault();
     closeForm();
-    // resetForm();
+    resetForm();
     const existingData = JSON.parse(localStorage.getItem('todoList'))|| [];
     console.log(existingData);
     todoList = [...existingData, new List(title, date, note)];
@@ -45,7 +45,7 @@ export default function addList(){
     localStorage.setItem('todoList', JSON.stringify(todoList));
     // listCard();
     console.log("sihasj",todoList);
-    // const page = (document.querySelector('.main1').innerHTML = '');
+    const page = (document.querySelector('.inboxDiv').innerHTML = '');
     displayToPage();
     
     
