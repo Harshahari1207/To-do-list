@@ -31,3 +31,27 @@ submitForm.addEventListener('click', addList);
 // console.log('Hello');
 
 window.onload = displayToPage();
+
+// Get all cards
+const cards = document.querySelectorAll(".card");
+console.log(cards);
+// Loop through each card
+for (let i = 0; i < cards.length; i++) {
+// Get delete icon for each card
+const deleteIcon = cards[i].querySelector(".deleteBtn");
+// Add click event to delete icon
+deleteIcon.addEventListener("click", function() {
+// Get card data
+const cardData = cards[i].querySelector(".titleDiv").textContent;
+// Delete card from local storage
+let cardDataObjects = JSON.parse(localStorage.getItem("todoList")) || [];
+cardDataObjects = cardDataObjects.filter(function(cardDataObject) {
+return cardDataObject !== cardData;
+});
+cardDataObjects.splice(i,1)
+localStorage.setItem("todoList", JSON.stringify(cardDataObjects));
+// Remove card from the DOM
+cards[i].remove();
+localStorage.setItem("todoList", JSON.stringify(cardDataObjects));
+});
+}

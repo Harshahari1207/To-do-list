@@ -47,7 +47,7 @@ export default function addList(){
     console.log("sihasj",todoList);
     const page = (document.querySelector('.inboxDiv').innerHTML = '');
     displayToPage();
-    
+    window.location.reload();
     
 }
 // console.log(todoList);
