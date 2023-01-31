@@ -16,7 +16,7 @@
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ weekElementsView)\n/* harmony export */ });\nfunction weekElementsView(){\r\n    const mainBar = document.querySelector('.mainBar');\r\n\r\n    mainBar.textContent = '';\r\n    const weekView = document.createElement('div');\r\n    weekView.classList.add('weekElementsView');\r\n    mainBar.appendChild(weekView);\r\n    const weekH2 = document.createElement('h2');\r\n    weekH2.textContent = \"This Week\";\r\n    weekView.appendChild(weekH2);\r\n    console.log(mainBar);\r\n}\n\n//# sourceURL=webpack://to-do-list/./src/weekElements.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ weekElementsView)\n/* harmony export */ });\nfunction weekElementsView(){\r\n    // const mainBar = document.querySelector('.mainBar');\r\n\r\n    // mainBar.textContent = '';\r\n    // const weekView = document.createElement('div');\r\n    // weekView.classList.add('weekElementsView');\r\n    // mainBar.appendChild(weekView);\r\n    // const weekH2 = document.createElement('h2');\r\n    // weekH2.textContent = \"This Week\";\r\n    // weekView.appendChild(weekH2);\r\n    // console.log(mainBar);\r\n    const weekElements = document.querySelector(\".weekElementsView\");\r\n    weekElements.style.display = 'flex';\r\n}\n\n//# sourceURL=webpack://to-do-list/./src/weekElements.js?");
 
 /***/ })
 

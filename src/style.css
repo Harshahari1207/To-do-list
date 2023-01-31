@@ -188,13 +188,53 @@ button{
 .mainBar button:hover{
     background-color: var(--light-brown);
 }
+.inboxElementsView{
+    display: flex;
+    width: 100%;
+    gap: var(--gap);
+}
+
+.inboxDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: calc(var(--gap)*2);
+}
+.card{
+    width: 100%;
+    background-color: var(--light-brown);
+    display: flex;
+    flex-direction: row;
+    padding: var(--pd);
+    /* gap: calc(var(--gap)*10); */
+    text-align: center;
+    justify-content: space-around;
+    border-radius: var(--br);
+}
+.btnDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    width: 15rem;
+    gap: var(--gap);
+}
+
+/* .card button{
+    width: 10%;
+} */
+.todayElementsView, .weekElementsView{
+    display: none;
+}
+
 .inboxElementsView, .todayElementsView, .weekElementsView{
     padding: calc(var(--pd)*4);
     width: 60%;
     height: 80vh;
-    display: flex;
+    
     flex-direction: column;
     position: absolute;
+    
 }
 .taskDiv{
     display: flex;

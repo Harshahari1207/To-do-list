@@ -1,19 +1,11 @@
 import displayToPage from "./display";
 
-
-
 const taskForm = document.querySelector('.taskForm');
-const title = document.getElementById('taskName');
-const date = document.getElementById('taskDate');
-const note = document.getElementById('taskNote');
+
+
+
 
 export let todoList = [
-    {
-        title: 'cloths',
-        date: '2023-01-31',
-        note: 'Its the end of the month, Wash Your Cloths.'
-        
-      }
 ];
 
 function List(title, date, note){
@@ -32,18 +24,20 @@ function closeForm(){
     taskForm.style.display = 'none';
     // event.preventDefault();
 }
-function resetForm(){
-    title.value = '';
-    date.value = '';
-    note.value = '';
-    event.preventDefault();
+// function resetForm(){
+    
+//     event.preventDefault();
 
-}
+// }
 export default function addList(){
+    console.log("Hello");
+    const title = document.getElementById('taskName').value;
+    const date = document.getElementById('taskDate').value;
+    const note = document.getElementById('taskNote').value;
     // addListToTodolist(title.value, date.value, note.value);
-    // event.preventDefault();
+    event.preventDefault();
     closeForm();
-    resetForm();
+    // resetForm();
     const existingData = JSON.parse(localStorage.getItem('todoList'))|| [];
     console.log(existingData);
     todoList = [...existingData, new List(title, date, note)];
@@ -51,7 +45,7 @@ export default function addList(){
     localStorage.setItem('todoList', JSON.stringify(todoList));
     // listCard();
     console.log("sihasj",todoList);
-    const page = (document.querySelector('.main1').innerHTML = '');
+    // const page = (document.querySelector('.main1').innerHTML = '');
     displayToPage();
     
     

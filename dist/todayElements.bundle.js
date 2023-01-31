@@ -16,7 +16,7 @@
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ todayElementsView)\n/* harmony export */ });\nfunction todayElementsView(){\r\n    const mainBar = document.querySelector('.mainBar');\r\n    \r\n    mainBar.textContent = '';\r\n    const todayView = document.createElement('div');\r\n    todayView.classList.add('todayElementsView');\r\n    mainBar.appendChild(todayView);\r\n    const todayH2 = document.createElement('h2');\r\n    todayH2.textContent = \"Today\";\r\n    todayView.appendChild(todayH2);\r\n    console.log(mainBar);\r\n}\n\n//# sourceURL=webpack://to-do-list/./src/todayElements.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ todayElementsView)\n/* harmony export */ });\nfunction todayElementsView(){\r\n    // const mainBar = document.querySelector('.mainBar');\r\n    \r\n    // mainBar.textContent = '';\r\n    // const todayView = document.createElement('div');\r\n    // todayView.classList.add('todayElementsView');\r\n    // mainBar.appendChild(todayView);\r\n    // const todayH2 = document.createElement('h2');\r\n    // todayH2.textContent = \"Today\";\r\n    // todayView.appendChild(todayH2);\r\n    // console.log(mainBar);\r\n    const todayElements = document.querySelector(\".todayElementsView\");\r\n    todayElements.style.display = 'flex';\r\n}\n\n//# sourceURL=webpack://to-do-list/./src/todayElements.js?");
 
 /***/ })
 
