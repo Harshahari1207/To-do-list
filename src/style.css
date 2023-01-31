@@ -28,9 +28,10 @@ button{
     justify-content: center;
     align-items: center;
     position: absolute;
+    z-index: 99;
 }
 .form{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: calc(var(--gap)*3);
@@ -130,7 +131,7 @@ button{
 
 /* Side bar Projects child elements */
 .projects{
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: calc(var(--gap)*3);
 }

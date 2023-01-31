@@ -1,6 +1,6 @@
-
+const mainContent = document.querySelector('.mainBar');
 export default function inboxElementsView(){
-    const mainContent = document.querySelector('.mainBar');
+    
     const taskForm = document.querySelector('.taskForm');
 
     mainContent.textContent = '';
@@ -25,3 +25,5 @@ export default function inboxElementsView(){
     // console.log("Hello hi");
 
 }
+
+
