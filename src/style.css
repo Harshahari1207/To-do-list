@@ -97,6 +97,19 @@ button{
     width: 20px;
     height: 30px;
 }
+.shortNoteBtn button{
+    width: 8rem;
+    border: 0;
+    border-radius: var(--br);
+    padding: var(--pd);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.shortNoteBtn button:hover{
+    background-color: var(--light-brown);
+    
+}
 
 /* Side bar  */
 .sideBar{
@@ -127,6 +140,22 @@ button{
 }
 #btnClick{
     background-color: var(--foo-color);
+}
+.shortNote{
+    display: flex;
+    gap: var(--gap);
+    flex-direction: column;
+    padding: var(--pd);
+    margin-left: 0;
+    left: 0;
+}
+
+.shortNote h2{
+    padding: var(--pd);
+}
+.shortNote textarea{
+    border-radius: var(--br);
+    padding: var(--pd);
 }
 
 /* Side bar Projects child elements */
